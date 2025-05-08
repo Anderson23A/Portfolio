@@ -1,0 +1,48 @@
+@use "../../../../colors.scss";
+
+.servico {
+  position: relative;
+  background-color: white;
+  width: 350px;
+  height: 385px;
+  overflow: hidden;
+  padding: 15px;
+  border-radius: 5px;
+  border: 1px solid colors.$cor-primaria;
+  .icon-placeholder {
+    width: 90px;
+    height: 90px;
+    margin-bottom: 5px;
+    background-color: colors.$cor-destaque;
+  }
+  .descricao {
+    p {
+      font-size: 1.5rem;
+      font-weight: 500;
+      color: colors.$cor-secundaria;
+    }
+  }
+  .items {
+    padding: 2px;
+    ul {
+      li {
+        color: colors.$cor-secundaria;
+        font-size: 1.1rem;
+      }
+    }
+  }
+  .cta-button {
+    .btn {
+      background-color: colors.$cor-destaque;
+      border-color: colors.$cor-destaque;
+      color: colors.$cor-primaria;
+      width: 100%;
+      transition: all 0.3s ease-in-out;
+      &:hover {
+        background-color: colors.$cor-secundaria;
+        border-color: colors.$cor-secundaria;
+        color: colors.$cor-base;
+      }
+    }
+  }
+}
