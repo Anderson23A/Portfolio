@@ -1,0 +1,220 @@
+@use "../../../../colors.scss";
+
+.pagina-inicial {
+  .secao-testimonials {
+    padding: 40px 0 40px 0;
+    .titulo {
+      text-align: center;
+      margin-bottom: 40px;
+      p {
+        position: relative;
+        width: fit-content;
+        left: 50%;
+        transform: translateX(-50%);
+        padding: 5px 10px 5px 10px;
+        border-radius: 5px;
+        margin: 0;
+        font-weight: 500;
+        color: colors.$cor-suave2;
+        background-color: colors.$cor-suave1;
+      }
+      h2 {
+        color: colors.$cor-primaria;
+      }
+    }
+    .testiominals {
+      position: relative;
+      background-color: colors.$cor-fundo;
+      width: 100%;
+      height: 100%;
+      padding: 10px;
+      .testimonial {
+        position: relative;
+        max-width: 550px;
+        left: 50%;
+        transform: translateX(-50%);
+        .cliente {
+          .foto {
+            position: relative;
+            width: 80px;
+            height: 80px;
+            left: 50%;
+            transform: translateX(-50%);
+            border-radius: 50%;
+            background-color: colors.$cor-primaria;
+            overflow: hidden;
+          }
+          .nome {
+            position: relative;
+            margin-top: 5px;
+            width: fit-content;
+            left: 50%;
+            transform: translateX(-50%);
+            p {
+              color: colors.$cor-secundaria;
+              font-size: 1.15rem;
+              font-weight: bold;
+              margin: 0;
+              width: fit-content;
+            }
+          }
+          .empresa {
+            position: relative;
+            background-color: colors.$cor-texto-contraste;
+            margin-top: 5px;
+            width: fit-content;
+            padding: 8px;
+            border-radius: 5px;
+            left: 50%;
+            transform: translateX(-50%);
+            p {
+              color: colors.$cor-card-verde;
+              width: fit-content;
+              margin: 0;
+              font-weight: 500;
+            }
+          }
+        }
+        .feedback-mensagem {
+          position: relative;
+          width: fit-content;
+          left: 50%;
+          transform: translateX(-50%);
+          margin-top: 10px;
+          p {
+            width: fit-content;
+            color: colors.$cor-secundaria;
+            font-size: 1.1rem;
+          }
+        }
+      }
+      .carousel {
+        padding-bottom: 30px;
+        .carousel-indicators {
+          button {
+            background-color: colors.$cor-primaria;
+          }
+        }
+        .carousel-control-prev,
+        .carousel-control-next {
+          div {
+            width: 30px;
+            height: 30px;
+
+            background-color: colors.$cor-secundaria;
+          }
+        }
+      }
+    }
+    .destaque-metrica {
+      position: relative;
+      width: 100%;
+      background-color: colors.$cor-suave;
+      padding: 10px;
+      text-align: center;
+      .destaque {
+        .texto-destaque {
+          margin: 0;
+          padding: 0;
+          span {
+            color: colors.$cor-primaria;
+            font-weight: bold;
+            font-size: 3rem;
+            margin: 0;
+            padding: 0;
+          }
+        }
+        .texto-descricao {
+          margin: 0;
+          padding: 0;
+          span {
+            font-size: 1.1rem;
+            font-weight: 500;
+            color: colors.$cor-secundaria;
+            margin: 0;
+            padding: 0;
+          }
+        }
+      }
+    }
+    .cta-banner {
+      position: relative;
+      width: 100%;
+      height: 500px;
+      background-image: url("https://img.freepik.com/free-photo/mid-adult-businessman-giving-presentation-group-industrial-workers-factory_637285-4792.jpg?t=st=1746820944~exp=1746824544~hmac=ef13900361219ee3a991e7e2cc2e27555be4dbaf7ef084002102226b50fafa3d&w=996");
+      background-repeat: none;
+      background-size: cover;
+      background-position: 10px;
+      border-image-source: linear-gradient(
+        rgba(colors.$cor-banner-cta, 0.7),
+        rgba(colors.$cor-banner-cta, 0.7)
+      );
+      border-image-slice: fill 1;
+      .cta-texto {
+        position: relative;
+        max-width: 490px;
+        padding-left: 5px;
+        padding-right: 5px;
+        p {
+          color: colors.$cor-base;
+          font-size: 1.7rem;
+          font-weight: 500;
+        }
+      }
+      .botao-cta {
+        position: absolute;
+        width: fit-content;
+        height: fit-content;
+        bottom: 40px;
+        right: 20px;
+        .btn {
+          background-color: colors.$cor-destaque;
+          border-color: colors.$cor-destaque;
+          color: colors.$cor-primaria;
+          font-weight: 500;
+          font-size: 1.1rem;
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: 768px) {
+  .pagina-inicial {
+    .secao-testimonials {
+      .cta-banner {
+        .cta-texto {
+          top: 20px;
+          left: 20px;
+          p {
+            font-size: 2.1rem;
+          }
+        }
+        .botao-cta {
+          bottom: 80px;
+          right: 100px;
+          .btn {
+            font-size: 1.5rem;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: 992px) {
+  .pagina-inicial {
+    .secao-testimonials {
+      .cta-banner {
+        .cta-texto {
+          top: 20px;
+          left: 20px;
+          max-width: 600px;
+          p {
+            font-size: 2.5rem;
+          }
+        }
+      }
+    }
+  }
+}
