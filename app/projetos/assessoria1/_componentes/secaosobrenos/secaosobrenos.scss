@@ -2,6 +2,8 @@
 
 .pagina-inicial {
   .secao-sobrenos {
+    position: relative;
+    width: 100%;
     padding: 40px;
     .titulo {
       text-align: center;
@@ -17,9 +19,13 @@
         color: colors.$cor-suave2;
         background-color: colors.$cor-suave1;
       }
+      h2 {
+        color: colors.$cor-primaria;
+      }
     }
     .sobrenos-container {
       position: relative;
+      margin-top: 25px;
       .imagemcta-container {
         position: relative;
 
@@ -31,6 +37,66 @@
           background-color: green;
           overflow: hidden;
           border-radius: 10px;
+        }
+      }
+      .carousel {
+        .carousel-indicators {
+          button {
+            background-color: colors.$cor-destaque;
+          }
+        }
+      }
+      .conteudo {
+        position: relative;
+        min-width: 300px;
+        max-width: 450px;
+        margin-top: 10px;
+        padding: 10px;
+        border: 2px solid colors.$cor-primaria;
+        border-radius: 5px;
+        flex-shrink: 0;
+        // height: 500px;
+        .titulo-conteudo {
+          position: relative;
+          padding-right: 10px;
+          padding-left: 10px;
+          &::before {
+            content: "";
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            width: 100%;
+            height: 2px;
+            border-radius: 10px;
+            background-color: colors.$cor-primaria;
+          }
+          p {
+            font-size: 1.3rem;
+            font-weight: 500;
+            padding: 0px 0 5px 0;
+            margin: 0;
+            color: colors.$cor-primaria;
+          }
+        }
+        .texto {
+          position: relative;
+          margin-top: 15px;
+          width: 100%;
+          p {
+            color: colors.$cor-secundaria;
+            font-weight: 400;
+            font-size: 1rem;
+          }
+        }
+        .btn {
+          position: relative;
+          width: 80%;
+          left: 50%;
+          transform: translateX(-50%);
+          background-color: colors.$cor-destaque;
+          border-color: colors.$cor-destaque;
+          color: colors.$cor-primaria;
+          font-weight: 500;
         }
       }
     }
@@ -56,7 +122,9 @@
     .secao-sobrenos {
       .sobrenos-container {
         .imagemcta-container {
+          flex-shrink: 0;
           .imagem-placeholder {
+            flex-shrink: 0;
             width: 480px;
             height: 400px;
           }
