@@ -1,0 +1,67 @@
+@use "../../../../colors.scss";
+
+.pagina-inicial {
+  .secao-sobrenos {
+    padding: 40px;
+    .titulo {
+      text-align: center;
+      p {
+        position: relative;
+        width: fit-content;
+        left: 50%;
+        transform: translateX(-50%);
+        padding: 5px 10px 5px 10px;
+        border-radius: 5px;
+        margin: 0;
+        font-weight: 500;
+        color: colors.$cor-suave2;
+        background-color: colors.$cor-suave1;
+      }
+    }
+    .sobrenos-container {
+      position: relative;
+      .imagemcta-container {
+        position: relative;
+
+        width: fit-content;
+        .imagem-placeholder {
+          position: relative;
+          width: 280px;
+          height: 320px;
+          background-color: green;
+          overflow: hidden;
+          border-radius: 10px;
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: 576px) {
+  .pagina-inicial {
+    .secao-sobrenos {
+      .sobrenos-container {
+        .imagemcta-container {
+          .imagem-placeholder {
+            width: 480px;
+            height: 400px;
+          }
+        }
+      }
+    }
+  }
+}
+@media (min-width: 768px) {
+  .pagina-inicial {
+    .secao-sobrenos {
+      .sobrenos-container {
+        .imagemcta-container {
+          .imagem-placeholder {
+            width: 480px;
+            height: 400px;
+          }
+        }
+      }
+    }
+  }
+}

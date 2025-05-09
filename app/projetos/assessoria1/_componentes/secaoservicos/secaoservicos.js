@@ -14,25 +14,25 @@ export default function SecaoServicos() {
         </div>
         <div className="lista-servicos">
           <Row>
-            <Col md={6} lg={6} className="d-flex justify-content-center">
+            <Col md={6} lg={3} className="d-flex justify-content-center">
               <div className="servico-container">
                 <Servico />
               </div>
             </Col>
             {/*  */}
-            <Col md={6} lg={6} className="d-flex justify-content-center">
+            <Col md={6} lg={3} className="d-flex justify-content-center">
               <div className="servico-container">
                 <Servico />
               </div>
             </Col>
             {/*  */}
-            <Col md={6} lg={6} className="d-flex justify-content-center">
+            <Col md={6} lg={3} className="d-flex justify-content-center">
               <div className="servico-container">
                 <Servico />
               </div>
             </Col>
             {/*  */}
-            <Col md={6} lg={6} className="d-flex justify-content-center">
+            <Col md={6} lg={3} className="d-flex justify-content-center">
               <div className="servico-container">
                 <Servico />
               </div>

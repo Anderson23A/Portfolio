@@ -9,7 +9,7 @@ export default function SecaoDiferenca() {
     const cols = [];
     for (let i = 0; i < 3; i += 1) {
       cols.push(
-        <Col>
+        <Col key={cols.length}>
           <div className="diferenca">
             <div className="icon-placeholder"></div>
             <div className="titulo">
