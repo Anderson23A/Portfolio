@@ -1,13 +1,11 @@
-"use client"
+"use client";
 import { useRouter } from "next/navigation";
 import { useEffect } from "react";
 
 export default function Home() {
-  const router = useRouter()
-  useEffect(()=>{
-    router.push('/projetos/assessoria1#home')
-  },[router])
-  return (
-    <></>
-  );
+  const router = useRouter();
+  useEffect(() => {
+    router.push("/projetos/assessoria1");
+  }, [router]);
+  return <></>;
 }

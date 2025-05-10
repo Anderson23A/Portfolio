@@ -4,6 +4,7 @@ import Col from "react-bootstrap/Col";
 import FormContato from "./form";
 import "./secaocontato.scss";
 import { EmailSVG, TelefoneSVG } from "../../_svgs/svgs";
+import VideoComp from "./video";
 
 export default function SecaoContato() {
   return (
@@ -25,9 +26,7 @@ export default function SecaoContato() {
             <Col md>
               <div className="cta-container">
                 <div className="video-container">
-                  <video width={"100%"} height={"100%"} autoPlay muted loop>
-                    <source src={"/videos/faleconosco.mp4"} type="video/mp4" />
-                  </video>
+                  <VideoComp />
                 </div>
               </div>
               <div className="formas-contato">
