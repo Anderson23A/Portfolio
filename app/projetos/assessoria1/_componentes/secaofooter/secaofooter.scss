@@ -6,6 +6,7 @@
     background-color: colors.$cor-alternativa;
     padding: 20px;
     min-height: 400px;
+    box-shadow: 1px 1px 8px rgba($color: colors.$cor-primaria, $alpha: 1);
     .footer-col-identidade {
       position: relative;
       text-align: center;
@@ -69,6 +70,7 @@
             color: colors.$cor-suave;
             font-size: 1.05rem;
             margin: 0;
+            overflow-wrap: break-word;
           }
         }
       }
@@ -87,6 +89,11 @@
         gap: 15px;
         .rede-social {
           width: fit-content;
+          cursor: pointer;
+          transition: all 0.3s ease-in-out;
+          &:hover {
+            scale: 1.1;
+          }
           .icone {
             position: relative;
             width: 40px;

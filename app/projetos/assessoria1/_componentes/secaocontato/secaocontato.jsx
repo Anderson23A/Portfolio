@@ -18,40 +18,42 @@ export default function SecaoContato() {
         </div>
         <div className="conteudo-contato">
           <Row>
-            <Col md>
+            <Col md className="d-flex justify-content-center">
               <div className="form-container">
                 <FormContato />
               </div>
             </Col>
-            <Col md>
-              <div className="cta-container">
-                <div className="video-container">
-                  <VideoComp />
+            <Col md className="d-flex justify-content-center">
+              <div>
+                <div className="cta-container">
+                  <div className="video-container">
+                    <VideoComp />
+                  </div>
                 </div>
-              </div>
-              <div className="formas-contato">
-                <Row>
-                  <Col sm>
-                    <div className="forma-contato">
-                      <div className="icone">
-                        <EmailSVG />
+                <div className="formas-contato">
+                  <Row>
+                    <Col sm>
+                      <div className="forma-contato">
+                        <div className="icone">
+                          <EmailSVG />
+                        </div>
+                        <div className="texto">
+                          <p>contato@consulplanconsultoria.com.br</p>
+                        </div>
                       </div>
-                      <div className="texto">
-                        <p>contato@consulplanconsultoria.com.br</p>
+                    </Col>
+                    <Col sm>
+                      <div className="forma-contato">
+                        <div className="icone">
+                          <TelefoneSVG />
+                        </div>
+                        <div className="texto">
+                          <p>(11) 99999-9999</p>
+                        </div>
                       </div>
-                    </div>
-                  </Col>
-                  <Col sm>
-                    <div className="forma-contato">
-                      <div className="icone">
-                        <TelefoneSVG />
-                      </div>
-                      <div className="texto">
-                        <p>(11) 99999-9999</p>
-                      </div>
-                    </div>
-                  </Col>
-                </Row>
+                    </Col>
+                  </Row>
+                </div>
               </div>
             </Col>
           </Row>

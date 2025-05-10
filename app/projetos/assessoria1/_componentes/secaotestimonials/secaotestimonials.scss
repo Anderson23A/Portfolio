@@ -83,7 +83,7 @@
           .feedback-mensagem {
             position: relative;
             width: fit-content;
-            height: 250px;
+            height: 400px;
             left: 50%;
             transform: translateX(-50%);
             margin-top: 10px;
@@ -183,6 +183,41 @@
             color: colors.$cor-primaria;
             font-weight: 500;
             font-size: 1.1rem;
+            transition: all 0.3s ease-in-out;
+            box-shadow: 1px 1px 8px rgba(black, 0.3);
+            animation: glowing 1s infinite alternate-reverse;
+            &:hover {
+              background-color: colors.$cor-secundaria;
+              border-color: colors.$cor-secundaria;
+              color: colors.$cor-base;
+              animation: none;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@keyframes glowing {
+  0% {
+    background-color: colors.$cor-destaque;
+    border-color: colors.$cor-destaque;
+  }
+  100% {
+    background-color: colors.$cor-glow;
+    border-color: colors.$cor-glow;
+  }
+}
+@media (min-width: 576px) {
+  .site-assessoria1 {
+    .pagina-inicial {
+      .secao-testimonials {
+        .testiominals {
+          .testimonial {
+            .feedback-mensagem {
+              height: 240px;
+            }
           }
         }
       }
