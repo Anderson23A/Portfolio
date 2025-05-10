@@ -9,7 +9,7 @@ const navitems = [
   },
   {
     link: "#",
-    nome: "Diferencias",
+    nome: "Diferenciais",
   },
   {
     link: "#",
