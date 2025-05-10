@@ -1,4 +1,4 @@
-@use "../../../../colors.scss";
+@use "../../colors.scss";
 .site-assessoria1 {
   .pagina-inicial {
     .secao-visao {
@@ -46,9 +46,21 @@
             margin-top: 12px;
             .icone {
               position: relative;
-              width: 50px;
-              height: 50px;
-              background-color: colors.$cor-destaque;
+              width: 70px;
+              height: 70px;
+              border: 3px solid colors.$cor-destaque;
+              border-radius: 50%;
+              // background-color: colors.$cor-destaque;
+              flex-shrink: 0;
+              svg {
+                position: relative;
+                width: 80%;
+                height: 80%;
+                left: 50%;
+                top: 50%;
+                transform: translateX(-50%) translateY(-50%);
+                color: colors.$cor-destaque;
+              }
             }
             .titulo-item {
               p {

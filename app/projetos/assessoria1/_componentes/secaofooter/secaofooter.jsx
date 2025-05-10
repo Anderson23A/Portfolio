@@ -1,7 +1,16 @@
 import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
+import navitems from "../mainnavbar/items";
+import {
+  FacebookSVG,
+  InstagramSVG,
+  WhastappSVG,
+  YoutubeSVG,
+} from "../../_svgs/svgs";
 import Link from "next/link";
+import LogoIMG from "../../../../../public/imagens/assessoria1/logo.png";
+import Image from "next/image";
 import "./secaofooter.scss";
 
 export default function SecaoFooter() {
@@ -11,9 +20,11 @@ export default function SecaoFooter() {
         <Row>
           <Col md>
             <div className="footer-col-identidade">
-              <div className="logo"></div>
+              <div className="logo">
+                <Image src={LogoIMG} alt="Logo" width={100} height={100} />
+              </div>
               <div className="texto">
-                <p>texto texto texto texto</p>
+                <p>ConsulPlan Estratégia e Soluções</p>
               </div>
             </div>
           </Col>
@@ -21,18 +32,11 @@ export default function SecaoFooter() {
             <div className="footer-col-navegacao">
               <h4>Links rápidos</h4>
               <ul>
-                <li>
-                  <Link href="#">link1</Link>
-                </li>
-                <li>
-                  <Link href="#">link2</Link>
-                </li>
-                <li>
-                  <Link href="#">link3</Link>
-                </li>
-                <li>
-                  <Link href="#">link4</Link>
-                </li>
+                {navitems.map((value, index) => (
+                  <li key={index}>
+                    <Link href={value["link"]}>{value["nome"]}</Link>
+                  </li>
+                ))}
               </ul>
             </div>
           </Col>
@@ -41,16 +45,16 @@ export default function SecaoFooter() {
               <h4>contato</h4>
               <ul>
                 <li>
-                  <p>texto texto</p>
+                  <p>Rua das Inovações, 123 – São Paulo, SP</p>
                 </li>
                 <li>
-                  <p>texto texto</p>
+                  <p>(11) 99999-9999</p>
                 </li>
                 <li>
-                  <p>texto texto</p>
+                  <p>contato@consulplanconsultoria.com.br</p>
                 </li>
                 <li>
-                  <p>texto texto</p>
+                  <p>Segunda a sexta, das 9h às 18h</p>
                 </li>
               </ul>
             </div>
@@ -60,16 +64,24 @@ export default function SecaoFooter() {
               <h4>Redes sociais</h4>
               <div className="redes">
                 <div className="rede-social">
-                  <div className="icone"></div>
+                  <div className="icone">
+                    <YoutubeSVG />
+                  </div>
                 </div>
                 <div className="rede-social">
-                  <div className="icone"></div>
+                  <div className="icone">
+                    <InstagramSVG />
+                  </div>
                 </div>
                 <div className="rede-social">
-                  <div className="icone"></div>
+                  <div className="icone">
+                    <FacebookSVG />
+                  </div>
                 </div>
                 <div className="rede-social">
-                  <div className="icone"></div>
+                  <div className="icone">
+                    <WhastappSVG />
+                  </div>
                 </div>
               </div>
             </div>

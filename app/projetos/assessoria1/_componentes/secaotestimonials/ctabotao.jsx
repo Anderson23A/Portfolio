@@ -2,5 +2,5 @@
 import Button from "react-bootstrap/Button";
 
 export default function CTABotaoTestimonials() {
-  return <Button>Call to aciton</Button>;
+  return <Button>Fale com a consultoria</Button>;
 }

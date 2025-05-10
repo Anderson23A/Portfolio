@@ -1,10 +1,10 @@
-@use "../../../../colors.scss";
+@use "../../colors.scss";
 
 .servico {
   position: relative;
   background-color: white;
   width: 270px;
-  height: 385px;
+  height: 510px;
   overflow: hidden;
   padding: 15px;
   border-radius: 5px;
@@ -13,17 +13,34 @@
     width: 90px;
     height: 90px;
     margin-bottom: 5px;
-    background-color: colors.$cor-destaque;
+    svg {
+      width: 100%;
+      height: 100%;
+      color: colors.$cor-destaque;
+    }
   }
   .descricao {
     p {
       font-size: 1.5rem;
       font-weight: 500;
       color: colors.$cor-secundaria;
+      line-height: 2rem;
+      height: calc(2rem * 3);
     }
   }
   .items {
-    padding: 2px;
+    height: 180px;
+    overflow-y: scroll;
+    &::-webkit-scrollbar {
+      width: 5px;
+      height: 5px;
+    }
+    &::-webkit-scrollbar-track {
+      background: colors.$cor-base1;
+    }
+    &::-webkit-scrollbar-thumb {
+      background: colors.$cor-destaque1;
+    }
     ul {
       li {
         color: colors.$cor-secundaria;
@@ -32,6 +49,7 @@
     }
   }
   .cta-button {
+    padding-top: 20px;
     .btn {
       background-color: colors.$cor-destaque;
       border-color: colors.$cor-destaque;

@@ -1,4 +1,4 @@
-@use "../../../../colors.scss";
+@use "../../colors.scss";
 
 .site-assessoria1 {
   .secao-footer {
@@ -11,11 +11,18 @@
       text-align: center;
       .logo {
         position: relative;
-        width: 50px;
-        height: 50px;
+        width: 100px;
+        height: 100px;
+        border-radius: 50%;
         background-color: colors.$cor-base;
         left: 50%;
         transform: translateX(-50%);
+        overflow: hidden;
+        img {
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+        }
       }
       .texto {
         margin-top: 5px;
@@ -73,17 +80,23 @@
       }
       .redes {
         position: relative;
+        margin-top: 10px;
         width: 100%;
         display: flex;
         justify-content: center;
-        gap: 10px;
+        gap: 15px;
         .rede-social {
           width: fit-content;
           .icone {
             position: relative;
-            width: 50px;
-            height: 50px;
-            background-color: colors.$cor-base;
+            width: 40px;
+            height: 40px;
+            // background-color: colors.$cor-base;
+            svg {
+              width: 100%;
+              height: 100%;
+              color: colors.$cor-base;
+            }
           }
         }
       }
