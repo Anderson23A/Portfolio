@@ -4,6 +4,7 @@ import SecaoServicos from "./_componentes/secaoservicos/secaoservicos";
 import SecaoSobreNos from "./_componentes/secaosobrenos/secaosobrenos";
 import SecaoVisao from "./_componentes/secaovisao/secaovisao";
 import SecaoTestiomonials from "./_componentes/secaotestimonials/secaotestimonials";
+import SecaoContato from "./_componentes/secaocontato/secaocontato";
 
 export const metadata = {
   title: "Template Assessoria1",
@@ -18,6 +19,7 @@ export default function Assessoria1() {
       <SecaoSobreNos />
       <SecaoVisao />
       <SecaoTestiomonials />
+      <SecaoContato />
     </div>
   );
 }

@@ -1,0 +1,92 @@
+@use "../../../../colors.scss";
+
+.site-assessoria1 {
+  .secao-footer {
+    position: relative;
+    background-color: colors.$cor-alternativa;
+    padding: 20px;
+    min-height: 400px;
+    .footer-col-identidade {
+      position: relative;
+      text-align: center;
+      .logo {
+        position: relative;
+        width: 50px;
+        height: 50px;
+        background-color: colors.$cor-base;
+        left: 50%;
+        transform: translateX(-50%);
+      }
+      .texto {
+        margin-top: 5px;
+        p {
+          font-size: 1.1rem;
+          font-weight: 500;
+          color: colors.$cor-base;
+        }
+      }
+    }
+    .footer-col-navegacao {
+      text-align: center;
+      h4 {
+        // color: red;
+        color: colors.$cor-base1;
+      }
+      ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        li {
+          margin: 5px;
+          a {
+            color: colors.$cor-base;
+            text-decoration: none;
+            font-size: 1.05rem;
+          }
+        }
+      }
+    }
+    .footer-col-contato {
+      text-align: center;
+      h4 {
+        // color: red;
+        color: colors.$cor-base1;
+      }
+      ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        li {
+          margin: 5px;
+          p {
+            color: colors.$cor-suave;
+            font-size: 1.05rem;
+            margin: 0;
+          }
+        }
+      }
+    }
+    .footer-col-sociais {
+      text-align: center;
+      h4 {
+        color: colors.$cor-base1;
+      }
+      .redes {
+        position: relative;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        gap: 10px;
+        .rede-social {
+          width: fit-content;
+          .icone {
+            position: relative;
+            width: 50px;
+            height: 50px;
+            background-color: colors.$cor-base;
+          }
+        }
+      }
+    }
+  }
+}
