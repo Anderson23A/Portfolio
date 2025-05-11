@@ -1,0 +1,106 @@
+@use "../colors.scss";
+
+.secao-sobre-nos {
+  background-color: colors.$cor-branca;
+  padding: 80px 0;
+
+  .titulo-secao {
+    color: colors.$cor-primaria;
+    font-size: 2rem;
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+  }
+
+  .subtitulo-secao {
+    color: colors.$cor-texto-principal;
+    font-size: 1.25rem;
+    margin-bottom: 1.5rem;
+  }
+
+  .texto-historia {
+    color: colors.$cor-texto-principal;
+    font-size: 1rem;
+    line-height: 1.6;
+    margin-bottom: 1rem;
+  }
+
+  .destaque-visao {
+    background-color: colors.$cor-fundo-calido;
+    color: colors.$cor-primaria;
+    padding: 1rem;
+    border-left: 5px solid colors.$cor-detalhe-clara;
+    font-weight: 600;
+    margin-bottom: 1.5rem;
+  }
+
+  .botao-cta {
+    background-color: colors.$cor-detalhe-clara;
+    border: none;
+    padding: 0.75rem 1.5rem;
+    font-weight: 600;
+    border-radius: 8px;
+    color: colors.$cor-branca;
+
+    &:hover {
+      background-color: darken(colors.$cor-detalhe-clara, 10%);
+    }
+  }
+
+  .coluna-imagens {
+    position: relative;
+    margin-bottom: 2rem;
+
+    .container-imagens {
+      position: relative;
+      width: 100%;
+      padding-top: 75%; // proporção 4:3
+    }
+
+    .imagem-substituta {
+      position: absolute;
+      background-color: colors.$cor-detalhe-clara;
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    }
+
+    .imagem-principal {
+      width: 70%;
+      height: 70%;
+      top: 0;
+      left: 0;
+    }
+
+    .imagem-sobreposta {
+      width: 50%;
+      height: 50%;
+      bottom: 0;
+      right: 0;
+      background-color: colors.$cor-branca;
+      border: 2px solid colors.$cor-detalhe-clara;
+    }
+  }
+
+  @media (max-width: 768px) {
+    .titulo-secao {
+      font-size: 1.5rem;
+    }
+
+    .subtitulo-secao {
+      font-size: 1rem;
+    }
+
+    .destaque-visao {
+      font-size: 0.95rem;
+    }
+
+    .botao-cta {
+      width: 100%;
+    }
+
+    .coluna-imagens {
+      .container-imagens {
+        padding-top: 60%;
+      }
+    }
+  }
+}

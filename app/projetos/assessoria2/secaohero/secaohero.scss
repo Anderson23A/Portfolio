@@ -1,0 +1,96 @@
+@use "../colors.scss";
+
+.hero-section {
+  position: relative;
+  min-height: 100vh;
+  background-color: colors.$cor-primaria; // fallback
+  background-image: url("/caminho-futuro-da-imagem.jpg"); // substituir depois
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  color: colors.$cor-branca;
+
+  .hero-overlay {
+    background-color: rgba(30, 42, 56, 0.7); // overlay escuro translúcido
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+  }
+
+  .hero-content {
+    z-index: 2;
+
+    .hero-icon-placeholder {
+      width: 80px;
+      height: 80px;
+      background-color: colors.$cor-detalhe-clara;
+      border-radius: 50%;
+      margin: 0 auto 20px;
+    }
+
+    .hero-title {
+      font-size: 2.5rem;
+      font-weight: 700;
+      margin-bottom: 20px;
+      color: colors.$cor-branca;
+    }
+
+    .hero-subtitle {
+      font-size: 1.2rem;
+      color: colors.$cor-secundaria-clara;
+      margin-bottom: 30px;
+    }
+
+    .hero-buttons {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 15px;
+
+      .btn-cta {
+        background-color: colors.$cor-destaque;
+        color: colors.$cor-branca;
+        border: none;
+        padding: 10px 25px;
+        font-weight: bold;
+        transition: background-color 0.3s ease;
+
+        &:hover {
+          background-color: colors.$cor-acao-positiva;
+        }
+      }
+
+      .btn-secondary-outline {
+        background-color: transparent;
+        color: colors.$cor-branca;
+        border: 2px solid colors.$cor-branca;
+        padding: 10px 25px;
+        font-weight: bold;
+
+        &:hover {
+          background-color: colors.$cor-branca;
+          color: colors.$cor-primaria;
+        }
+      }
+    }
+  }
+
+  @media (max-width: 768px) {
+    .hero-content {
+      .hero-title {
+        font-size: 1.8rem;
+      }
+
+      .hero-subtitle {
+        font-size: 1rem;
+      }
+
+      .hero-icon-placeholder {
+        width: 60px;
+        height: 60px;
+      }
+    }
+  }
+}

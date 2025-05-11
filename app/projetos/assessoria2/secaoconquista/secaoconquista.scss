@@ -1,0 +1,61 @@
+@use "../colors.scss";
+
+.achievements-section {
+  background-color: colors.$cor-secundaria-clara;
+  padding: 60px 0;
+
+  .section-title {
+    color: colors.$cor-primaria;
+    font-size: 2rem;
+    font-weight: 700;
+    margin-bottom: 40px;
+  }
+
+  .achievement-card {
+    background-color: colors.$cor-branca;
+    padding: 30px 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+    text-align: center;
+    height: 100%;
+    transition: transform 0.2s ease-in-out;
+
+    &:hover {
+      transform: translateY(-5px);
+    }
+
+    .icon-placeholder {
+      width: 60px;
+      height: 60px;
+      margin: 0 auto 20px;
+      background-color: colors.$cor-detalhe-clara;
+      border-radius: 50%;
+      // Substituir esta div por ícone ou imagem posteriormente
+    }
+
+    .achievement-text {
+      color: colors.$cor-texto-principal;
+      font-weight: 600;
+      font-size: 1rem;
+    }
+  }
+
+  @media (max-width: 768px) {
+    .section-title {
+      font-size: 1.5rem;
+    }
+
+    .achievement-card {
+      padding: 20px 15px;
+
+      .icon-placeholder {
+        width: 50px;
+        height: 50px;
+      }
+
+      .achievement-text {
+        font-size: 0.95rem;
+      }
+    }
+  }
+}

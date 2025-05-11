@@ -1,0 +1,130 @@
+@use "../colors.scss";
+
+.rodape {
+  background-color: colors.$cor-primaria;
+  color: colors.$cor-branca;
+  padding: 60px 0 30px;
+
+  .conteudo-principal {
+    margin-bottom: 30px;
+  }
+
+  .coluna {
+    margin-bottom: 30px;
+
+    .titulo-coluna {
+      font-size: 1.2rem;
+      margin-bottom: 1rem;
+      color: colors.$cor-branca;
+      font-weight: 600;
+    }
+
+    .descricao {
+      font-size: 0.95rem;
+      color: colors.$cor-secundaria-clara;
+    }
+
+    .lista-links {
+      list-style: none;
+      padding-left: 0;
+
+      li {
+        margin-bottom: 0.5rem;
+
+        a {
+          color: colors.$cor-secundaria-clara;
+          text-decoration: none;
+
+          &:hover {
+            color: colors.$cor-detalhe-clara;
+          }
+        }
+      }
+    }
+
+    .link-externo {
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+      color: colors.$cor-branca;
+      margin-top: 0.5rem;
+      text-decoration: none;
+
+      &:hover {
+        color: colors.$cor-detalhe-clara;
+      }
+    }
+
+    .redes-sociais {
+      display: flex;
+      gap: 0.75rem;
+      margin-bottom: 0.75rem;
+
+      a {
+        width: 32px;
+        height: 32px;
+
+        .icone-azul {
+          background-color: colors.$cor-branca; // Substituir por ícone azul da rede
+          width: 100%;
+          height: 100%;
+          border-radius: 6px;
+        }
+      }
+    }
+
+    .icone-branco {
+      width: 16px;
+      height: 16px;
+      background-color: colors.$cor-branca; // Substituir por ícone específico
+      display: inline-block;
+      margin-right: 6px;
+      border-radius: 4px;
+    }
+
+    .texto-social {
+      font-size: 0.9rem;
+      color: colors.$cor-secundaria-clara;
+    }
+
+    .espaco-logo {
+      width: 120px;
+      height: 40px;
+      background-color: colors.$cor-branca; // Espaço para o logotipo
+      border-radius: 6px;
+      margin-bottom: 1rem;
+    }
+  }
+
+  .barra-inferior {
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    padding-top: 20px;
+    text-align: center;
+
+    .texto-inferior {
+      font-size: 0.85rem;
+      color: colors.$cor-secundaria-clara;
+
+      a {
+        color: colors.$cor-detalhe-clara;
+        text-decoration: none;
+
+        &:hover {
+          text-decoration: underline;
+        }
+      }
+    }
+  }
+
+  @media (max-width: 768px) {
+    .conteudo-principal {
+      text-align: center;
+    }
+
+    .coluna {
+      .redes-sociais {
+        justify-content: center;
+      }
+    }
+  }
+}
