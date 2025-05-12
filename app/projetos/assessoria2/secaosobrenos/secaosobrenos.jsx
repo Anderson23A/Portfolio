@@ -29,7 +29,7 @@ export default function SecaoSobreNos() {
           <Col md={6}>
             <h2 className="titulo-secao">Quem Somos</h2>
             <h4 className="subtitulo-secao">
-              Consultores apaixonados por transformar negócios
+              Assessores apaixonados por transformar negócios
             </h4>
             <p className="texto-historia">
               A Alvo Estratégico atua há mais de 15 anos no mercado, oferecendo

@@ -4,38 +4,52 @@ import Col from "react-bootstrap/Col";
 import CardClient from "./card";
 import BotaoCTA from "./botao";
 import "./secaoservicos.scss";
+import {
+  DollarSVG,
+  EscudoComCheckMarkSVG,
+  GraficoSetaCrescenteSVG,
+  GrupoPessoasSVG,
+  MegaFoneSVG,
+  VelocimetroSVG,
+} from "../_componentes_assessoria2/svgs/svgs";
 
 export default function SecaoServicos() {
   const servicos = [
     {
+      icone: <GraficoSetaCrescenteSVG />,
       titulo: "Planejamento Estratégico",
       descricao:
-        "Desenvolvemos estratégias sob medida para o crescimento sustentável da sua empresa.",
+        "Apoiamos sua empresa na implementação e monitoramento contínuo das estratégias para crescimento sustentável.",
     },
     {
+      icone: <VelocimetroSVG />,
       titulo: "Análise de Desempenho",
       descricao:
-        "Identificamos oportunidades de melhoria com base em dados e indicadores claros.",
+        "Acompanhamos os indicadores de desempenho da sua empresa, implementando melhorias de forma contínua.",
     },
     {
-      titulo: "Controle Financeiro",
+      icone: <DollarSVG />,
+      titulo: "Gestão Financeira",
       descricao:
-        "Apoiamos na organização do fluxo de caixa e planejamento orçamentário eficiente.",
+        "Oferecemos suporte contínuo no controle financeiro e planejamento orçamentário, garantindo eficiência operacional",
     },
     {
-      titulo: "Consultoria Tributária",
+      icone: <EscudoComCheckMarkSVG />,
+      titulo: "Assessoria Tributária",
       descricao:
-        "Orientamos sobre obrigações fiscais e redução de riscos legais e financeiros.",
+        "Apoiamos sua empresa no cumprimento das obrigações fiscais e na redução de riscos, com acompanhamento diário.",
     },
     {
+      icone: <GrupoPessoasSVG />,
       titulo: "Gestão de Pessoas",
       descricao:
-        "Ajudamos na estruturação de equipes, avaliações e treinamentos corporativos.",
+        "Auxiliamos na gestão diária de equipes, com foco no desenvolvimento e na avaliação contínua de desempenho.",
     },
     {
+      icone: <MegaFoneSVG />,
       titulo: "Marketing e Posicionamento",
       descricao:
-        "Fortalecemos sua marca com ações estratégicas de comunicação e mercado.",
+        "Apoiamos na execução de estratégias de marketing, com monitoramento constante do posicionamento da sua marca.",
     },
   ];
 

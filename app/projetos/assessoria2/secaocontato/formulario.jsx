@@ -1,6 +1,8 @@
 "use client";
 import Form from "react-bootstrap/Form";
 import Button from "react-bootstrap/Button";
+import { WhastappSVG } from "../../assessoria1/_svgs/svgs";
+import { LinkedinSVG } from "../_componentes_assessoria2/svgs/svgs";
 
 export default function Formulario() {
   return (
@@ -41,14 +43,18 @@ export default function Formulario() {
           Enviar Mensagem
         </Button>
 
-        {/* Substituir por ícone de WhatsApp */}
         <a href="#" className="botao-whatsapp">
-          <div className="icone-branco"></div> Atender via WhatsApp
+          <div className="icone">
+            <WhastappSVG />
+          </div>
+          <span>Atender via WhatsApp</span>
         </a>
 
-        {/* Substituir por ícone do LinkedIn */}
         <a href="#" className="botao-linkedin">
-          <div className="icone-azul"></div> Acompanhar no LinkedIn
+          <div className="icone">
+            <LinkedinSVG />
+          </div>
+          <span>Acompanhar no LinkedIn</span>
         </a>
       </div>
     </Form>

@@ -5,7 +5,9 @@ export default function CardClient(props) {
   return (
     <Card className="cartao-servico">
       {/* Substituir pelo ícone correspondente */}
-      <div className="icone-substituto" aria-hidden="true"></div>
+      <div className="icone" aria-hidden="true">
+        {props.servico.icone}
+      </div>
       <Card.Body>
         <Card.Title className="titulo-servico">
           {props.servico.titulo}

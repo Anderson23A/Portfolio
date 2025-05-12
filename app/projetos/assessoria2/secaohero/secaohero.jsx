@@ -12,11 +12,13 @@ export default function SecaoHero() {
         </div>
 
         <h1 className="hero-titulo">
-          Consultoria Estratégica para Empresas que Querem Crescer com Segurança
+          Assessoria Estratégica para Empresas que Buscam Crescer com Segurança
+          e Eficiência
         </h1>
         <p className="hero-subtitulo">
-          Mais de 10 anos ajudando empresas a alcançar resultados reais com
-          soluções personalizadas.
+          Mais de 10 anos de experiência oferecendo assessoria personalizada
+          para ajudar empresas a alcançar resultados reais de forma prática e
+          segura.
         </p>
         <HeroBotoes />
       </Container>
