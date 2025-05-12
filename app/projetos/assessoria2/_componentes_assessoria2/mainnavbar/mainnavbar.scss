@@ -7,8 +7,6 @@
   transition: background-color 0.3s ease, box-shadow 0.3s ease;
 
   .navbar-brand {
-    display: flex;
-    justify-content: center;
     flex-grow: 1;
     .logo {
       width: 50px;

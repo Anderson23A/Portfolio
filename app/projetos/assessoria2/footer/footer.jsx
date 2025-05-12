@@ -11,7 +11,8 @@ import {
   InstagramSVG,
   LinkedinSVG,
 } from "../_componentes_assessoria2/svgs/svgs";
-
+import logoIMG from "../../../../public/imagens/assessoria2/logo.png";
+import Image from "next/image";
 export default function Footer() {
   return (
     <footer className="rodape">
@@ -20,8 +21,9 @@ export default function Footer() {
           {/* Coluna 1: Logo e descrição */}
           <Col md={6} lg={3} className="coluna">
             <div className="logo-footer">
-              {/* Substituir pela imagem do logotipo em branco */}
-              <div className="espaco-logo"></div>
+              <div className="espaco-logo">
+                <Image src={logoIMG} alt="logo" width={100} height={100} />
+              </div>
             </div>
             <p className="descricao">
               Consultoria especializada em transformar desafios empresariais em
@@ -111,7 +113,7 @@ export default function Footer() {
             <a
               href="https://anderson23a.github.io/Portfolio/"
               target="_blank"
-              rel="noreferrer"
+              rel="noopener noreferrer"
             >
               AndersonDev
             </a>

@@ -87,6 +87,18 @@ export default function SecaoFooter() {
             </div>
           </Col>
         </Row>
+        <div className="copyright">
+          <p>
+            <span>© 2025 ConsulPlan – website Desenvolvido por </span>
+            <a
+              href="https://anderson23a.github.io/Portfolio/"
+              rel="noopener noreferrer"
+              target="_blank"
+            >
+              AndersonDev
+            </a>
+          </p>
+        </div>
       </Container>
     </footer>
   );

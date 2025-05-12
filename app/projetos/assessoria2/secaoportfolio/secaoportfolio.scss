@@ -44,7 +44,12 @@
     .imagem-projeto {
       width: 100%;
       height: 250px;
-      background-color: colors.$cor-secundaria-clara; // Substituir por imagem real
+      background-color: colors.$cor-secundaria-clara;
+      img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
     }
 
     .informacoes-hover {
