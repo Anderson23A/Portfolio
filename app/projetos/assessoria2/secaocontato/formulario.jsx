@@ -44,16 +44,16 @@ export default function Formulario() {
         </Button>
 
         <a href="#" className="botao-whatsapp">
-          <div className="icone">
+          <span className="icone">
             <WhastappSVG />
-          </div>
+          </span>
           <span>Atender via WhatsApp</span>
         </a>
 
         <a href="#" className="botao-linkedin">
-          <div className="icone">
+          <span className="icone">
             <LinkedinSVG />
-          </div>
+          </span>
           <span>Acompanhar no LinkedIn</span>
         </a>
       </div>

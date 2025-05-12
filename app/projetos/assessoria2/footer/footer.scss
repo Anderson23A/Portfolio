@@ -53,6 +53,9 @@
       &:hover {
         color: colors.$cor-detalhe-clara;
       }
+      .icone-contato {
+        display: flex;
+      }
     }
 
     .redes-sociais {
@@ -64,22 +67,33 @@
         width: 32px;
         height: 32px;
 
-        .icone-azul {
-          background-color: colors.$cor-branca; // Substituir por ícone azul da rede
+        .icone-redesocial {
           width: 100%;
           height: 100%;
           border-radius: 6px;
+          svg {
+            width: 100%;
+            height: 100%;
+            color: colors.$cor-branca;
+          }
         }
       }
     }
-
-    .icone-branco {
+    .contato-info {
+      display: flex;
+      gap: 0px;
+    }
+    .icone-contato {
       width: 16px;
       height: 16px;
-      background-color: colors.$cor-branca; // Substituir por ícone específico
+      // background-color: colors.$cor-branca; // Substituir por ícone específico
       display: inline-block;
       margin-right: 6px;
       border-radius: 4px;
+      svg {
+        width: 100%;
+        height: 100%;
+      }
     }
 
     .texto-social {

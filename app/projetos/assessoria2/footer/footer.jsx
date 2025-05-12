@@ -2,6 +2,15 @@ import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 import "./footer.scss";
+import {
+  EmailSVG,
+  TelefoneSVG,
+  WhastappSVG,
+} from "../../assessoria1/_svgs/svgs";
+import {
+  InstagramSVG,
+  LinkedinSVG,
+} from "../_componentes_assessoria2/svgs/svgs";
 
 export default function Footer() {
   return (
@@ -46,21 +55,23 @@ export default function Footer() {
           <Col md={6} lg={3} className="coluna">
             <h5 className="titulo-coluna">Contato</h5>
             <p>Rua Exemplo, 123 – São Paulo/SP</p>
-            <p>
-              {/* Substituir por ícone de telefone */}
-              <span className="icone-branco"></span> (11) 99999-9999
-            </p>
-            <p>
-              {/* Substituir por ícone de e-mail */}
-              <span className="icone-branco"></span> contato@alvoestrategico.com
-            </p>
-            <a
-              href="https://wa.me/seunumerowhatsapp"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="link-externo"
-            >
-              <span className="icone-branco"></span> Atendimento via WhatsApp
+            <div className="contato-info">
+              <span className="icone-contato">
+                <TelefoneSVG />
+              </span>
+              <p>(11) 99999-9999</p>
+            </div>
+            <div className="contato-info">
+              <span className="icone-contato">
+                <EmailSVG />
+              </span>
+              <p>contato@alvoestrategico.com</p>
+            </div>
+            <a href="#" className="link-externo">
+              <span className="icone-contato">
+                <WhastappSVG />
+              </span>
+              <span>Atendimento via WhatsApp</span>
             </a>
           </Col>
 
@@ -70,13 +81,19 @@ export default function Footer() {
             <div className="redes-sociais">
               {/* Substituir por ícones clicáveis */}
               <a href="#">
-                <div className="icone-azul"></div>
+                <span className="icone-redesocial">
+                  <InstagramSVG />
+                </span>
               </a>
               <a href="#">
-                <div className="icone-azul"></div>
+                <span className="icone-redesocial">
+                  <LinkedinSVG />
+                </span>
               </a>
               <a href="#">
-                <div className="icone-azul"></div>
+                <span className="icone-redesocial">
+                  <WhastappSVG />
+                </span>
               </a>
             </div>
             <p className="texto-social">
@@ -91,7 +108,13 @@ export default function Footer() {
           <p className="texto-inferior">
             © 2025 Alvo Estratégico – Todos os direitos reservados. Desenvolvido
             por{" "}
-            <a href="https://anderson23a.github.io/Portfolio/">AndersonDev</a>
+            <a
+              href="https://anderson23a.github.io/Portfolio/"
+              target="_blank"
+              rel="noreferrer"
+            >
+              AndersonDev
+            </a>
           </p>
         </div>
       </Container>
