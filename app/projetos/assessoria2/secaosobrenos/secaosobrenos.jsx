@@ -2,6 +2,9 @@ import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 import BotaoCTA from "./botao";
+import Image from "next/image";
+import img1 from "../../../../public/imagens/assessoria2/sobrenos1.png";
+import img2 from "../../../../public/imagens/assessoria2/sobrenos2.png";
 import "./secaosobrenos.scss";
 
 export default function SecaoSobreNos() {
@@ -12,16 +15,13 @@ export default function SecaoSobreNos() {
           {/* Coluna Visual */}
           <Col md={6} className="coluna-imagens">
             <div className="container-imagens">
-              {/* Substituir por imagem principal */}
-              <div
-                className="imagem-substituta imagem-principal"
-                aria-hidden="true"
-              ></div>
-              {/* Substituir por imagem sobreposta */}
-              <div
-                className="imagem-substituta imagem-sobreposta"
-                aria-hidden="true"
-              ></div>
+              <div className="imagem-c imagem-principal" aria-hidden="true">
+                <Image src={img1} alt="principal" width={100} height={100} />
+              </div>
+              {/* imagem sobreposta */}
+              <div className="imagem-c imagem-sobreposta" aria-hidden="true">
+                <Image src={img2} alt="principal" width={100} height={100} />
+              </div>
             </div>
           </Col>
 

@@ -1,17 +1,17 @@
 @use "../colors.scss";
 
-.achievements-section {
+.secao-conquistas {
   background-color: colors.$cor-secundaria-clara;
   padding: 60px 0;
 
-  .section-title {
+  .titulo-secao {
     color: colors.$cor-primaria;
     font-size: 2rem;
     font-weight: 700;
     margin-bottom: 40px;
   }
 
-  .achievement-card {
+  .cartao-conquista {
     background-color: colors.$cor-branca;
     padding: 30px 20px;
     border-radius: 12px;
@@ -24,16 +24,20 @@
       transform: translateY(-5px);
     }
 
-    .icon-placeholder {
+    .icone-placeholder {
       width: 60px;
       height: 60px;
       margin: 0 auto 20px;
-      background-color: colors.$cor-detalhe-clara;
+      // background-color: colors.$cor-detalhe-clara;
       border-radius: 50%;
-      // Substituir esta div por ícone ou imagem posteriormente
+      svg {
+        width: 100%;
+        height: 100%;
+        color: colors.$cor-detalhe-clara;
+      }
     }
 
-    .achievement-text {
+    .texto-conquista {
       color: colors.$cor-texto-principal;
       font-weight: 600;
       font-size: 1rem;
@@ -41,19 +45,19 @@
   }
 
   @media (max-width: 768px) {
-    .section-title {
+    .titulo-secao {
       font-size: 1.5rem;
     }
 
-    .achievement-card {
+    .cartao-conquista {
       padding: 20px 15px;
 
-      .icon-placeholder {
+      .icone-placeholder {
         width: 50px;
         height: 50px;
       }
 
-      .achievement-text {
+      .texto-conquista {
         font-size: 0.95rem;
       }
     }

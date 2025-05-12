@@ -1,4 +1,4 @@
-import MainNavbar from "./_componentes_assessoria2/mainnavbar";
+import MainNavbar from "./_componentes_assessoria2/mainnavbar/mainnavbar";
 import Footer from "./footer/footer";
 
 export default function LayoutAssessoria2({ children }) {

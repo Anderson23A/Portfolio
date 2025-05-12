@@ -3,7 +3,7 @@ import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 import CardClient from "./card";
 import BotaoCTA from "./botao";
-import "./secaoServicos.scss";
+import "./secaoservicos.scss";
 
 export default function SecaoServicos() {
   const servicos = [

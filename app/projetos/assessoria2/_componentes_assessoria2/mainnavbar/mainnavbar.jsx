@@ -1,5 +1,7 @@
 "use client";
 import { Navbar, Nav, Button, Container } from "react-bootstrap";
+import Image from "next/image";
+import logoIMG from "../../../../../public/imagens/assessoria2/logo.png";
 import Link from "next/link";
 import "./mainnavbar.scss";
 
@@ -21,7 +23,13 @@ export default function MainNavbar() {
             </Nav.Link>
           </Nav>
           <Navbar.Brand className="logo-container" href="#home">
-            <img src="/logo.svg" alt="Logo Alvo Estratégico" className="logo" />
+            <Image
+              src={logoIMG}
+              alt="Logo Alvo Estratégico"
+              className="logo"
+              width={100}
+              height={100}
+            />
           </Navbar.Brand>
           <Nav>
             <Nav.Link as={Link} href="#portfolio" className="nav-link">

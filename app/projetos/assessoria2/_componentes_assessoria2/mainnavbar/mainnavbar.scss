@@ -1,4 +1,4 @@
-@use "../colors.scss";
+@use "../../colors.scss";
 
 .navbar-custom {
   background-color: colors.$cor-branca;
@@ -10,11 +10,12 @@
     display: flex;
     justify-content: center;
     flex-grow: 1;
-
     .logo {
+      width: 50px;
       max-height: 50px;
       transition: transform 0.3s ease;
-
+      object-fit: cover;
+      border-radius: 50%;
       &:hover {
         transform: scale(1.1);
       }
