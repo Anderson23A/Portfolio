@@ -49,6 +49,7 @@
       color: colors.$cor-branca;
       margin-top: 0.5rem;
       text-decoration: none;
+      justify-content: center;
 
       &:hover {
         color: colors.$cor-detalhe-clara;
@@ -82,6 +83,7 @@
     .contato-info {
       display: flex;
       gap: 0px;
+      justify-content: center;
     }
     .icone-contato {
       width: 16px;
@@ -102,8 +104,11 @@
     }
 
     .espaco-logo {
+      position: relative;
       width: 80px;
       height: 80px;
+      left: 0%;
+      transform: translateX(-0%);
       background-color: colors.$cor-branca; // Espaço para o logotipo
       border-radius: 6px;
       margin-bottom: 1rem;
@@ -142,6 +147,10 @@
     }
 
     .coluna {
+      .espaco-logo {
+        left: 50%;
+        transform: translateX(-50%);
+      }
       .redes-sociais {
         justify-content: center;
       }
