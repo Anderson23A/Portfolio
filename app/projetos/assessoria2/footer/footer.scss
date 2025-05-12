@@ -49,8 +49,6 @@
       color: colors.$cor-branca;
       margin-top: 0.5rem;
       text-decoration: none;
-      justify-content: center;
-
       &:hover {
         color: colors.$cor-detalhe-clara;
       }
@@ -83,7 +81,6 @@
     .contato-info {
       display: flex;
       gap: 0px;
-      justify-content: center;
     }
     .icone-contato {
       width: 16px;
@@ -152,6 +149,12 @@
         transform: translateX(-50%);
       }
       .redes-sociais {
+        justify-content: center;
+      }
+      .link-externo {
+        justify-content: center;
+      }
+      .contato-info {
         justify-content: center;
       }
     }
