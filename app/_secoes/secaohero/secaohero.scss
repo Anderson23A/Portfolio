@@ -1,0 +1,57 @@
+@use "../../colors.scss";
+
+.secao-hero {
+  position: relative;
+  background-color: colors.$cor-fundo-principal;
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+  .coluna-texto {
+    color: colors.$cor-texto-principal;
+    margin-top: 0rem;
+    margin-bottom: 3rem;
+    .conteudo-texto {
+      position: relative;
+      width: fit-content;
+      height: fit-content;
+    }
+    h1,
+    p {
+      width: fit-content;
+    }
+    h1 {
+      .bold-texto {
+        color: colors.$cor-titulo-principal;
+      }
+    }
+    p {
+      color: colors.$cor-texto-secundario;
+    }
+    .btn {
+      background-color: colors.$cor-botao-primario-fundo;
+      border-color: colors.$cor-botao-primario-fundo;
+      &:hover {
+        background-color: colors.$cor-botao-primario-hover;
+        border-color: colors.$cor-botao-primario-hover;
+      }
+    }
+  }
+  .coluna-imagem {
+    .imagem-placeholder {
+      width: 100%;
+      max-width: 650px;
+      // height: 400px;
+      aspect-ratio: 16/9;
+      background-color: colors.$cor-icone-principal;
+      border-radius: 5px;
+    }
+  }
+  @media (min-width: 992px) {
+    & {
+      height: 520px;
+      .coluna-texto {
+        margin-top: 0;
+        margin-bottom: 0;
+      }
+    }
+  }
+}
