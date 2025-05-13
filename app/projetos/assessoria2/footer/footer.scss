@@ -1,161 +1,163 @@
 @use "../colors.scss";
 
-.rodape {
-  background-color: colors.$cor-primaria;
-  color: colors.$cor-branca;
-  padding: 60px 0 30px;
+.site-assessoria2 {
+  .rodape {
+    background-color: colors.$cor-primaria;
+    color: colors.$cor-branca;
+    padding: 60px 0 30px;
 
-  .conteudo-principal {
-    margin-bottom: 30px;
-  }
-
-  .coluna {
-    margin-bottom: 30px;
-
-    .titulo-coluna {
-      font-size: 1.2rem;
-      margin-bottom: 1rem;
-      color: colors.$cor-branca;
-      font-weight: 600;
-    }
-
-    .descricao {
-      font-size: 0.95rem;
-      color: colors.$cor-secundaria-clara;
-    }
-
-    .lista-links {
-      list-style: none;
-      padding-left: 0;
-
-      li {
-        margin-bottom: 0.5rem;
-
-        a {
-          color: colors.$cor-secundaria-clara;
-          text-decoration: none;
-
-          &:hover {
-            color: colors.$cor-detalhe-clara;
-          }
-        }
-      }
-    }
-
-    .link-externo {
-      display: flex;
-      align-items: center;
-      gap: 0.5rem;
-      color: colors.$cor-branca;
-      margin-top: 0.5rem;
-      text-decoration: none;
-      &:hover {
-        color: colors.$cor-detalhe-clara;
-      }
-      .icone-contato {
-        display: flex;
-      }
-    }
-
-    .redes-sociais {
-      display: flex;
-      gap: 0.75rem;
-      margin-bottom: 0.75rem;
-
-      a {
-        width: 32px;
-        height: 32px;
-
-        .icone-redesocial {
-          width: 100%;
-          height: 100%;
-          border-radius: 6px;
-          svg {
-            width: 100%;
-            height: 100%;
-            color: colors.$cor-branca;
-          }
-        }
-      }
-    }
-    .contato-info {
-      display: flex;
-      gap: 0px;
-    }
-    .icone-contato {
-      width: 16px;
-      height: 16px;
-      // background-color: colors.$cor-branca; // Substituir por ícone específico
-      display: inline-block;
-      margin-right: 6px;
-      border-radius: 4px;
-      svg {
-        width: 100%;
-        height: 100%;
-      }
-    }
-
-    .texto-social {
-      font-size: 0.9rem;
-      color: colors.$cor-secundaria-clara;
-    }
-
-    .espaco-logo {
-      position: relative;
-      width: 80px;
-      height: 80px;
-      left: 0%;
-      transform: translateX(-0%);
-      background-color: colors.$cor-branca; // Espaço para o logotipo
-      border-radius: 6px;
-      margin-bottom: 1rem;
-      overflow: hidden;
-      img {
-        width: 100%;
-        height: 100%;
-        object-fit: cover;
-      }
-    }
-  }
-
-  .barra-inferior {
-    border-top: 1px solid rgba(255, 255, 255, 0.1);
-    padding-top: 20px;
-    text-align: center;
-
-    .texto-inferior {
-      font-size: 0.85rem;
-      color: colors.$cor-secundaria-clara;
-
-      a {
-        color: colors.$cor-detalhe-clara;
-        text-decoration: none;
-
-        &:hover {
-          text-decoration: underline;
-        }
-      }
-    }
-  }
-
-  @media (max-width: 768px) {
     .conteudo-principal {
-      text-align: center;
+      margin-bottom: 30px;
     }
 
     .coluna {
-      .espaco-logo {
-        left: 50%;
-        transform: translateX(-50%);
+      margin-bottom: 30px;
+
+      .titulo-coluna {
+        font-size: 1.2rem;
+        margin-bottom: 1rem;
+        color: colors.$cor-branca;
+        font-weight: 600;
       }
-      .redes-sociais {
-        justify-content: center;
+
+      .descricao {
+        font-size: 0.95rem;
+        color: colors.$cor-secundaria-clara;
       }
+
+      .lista-links {
+        list-style: none;
+        padding-left: 0;
+
+        li {
+          margin-bottom: 0.5rem;
+
+          a {
+            color: colors.$cor-secundaria-clara;
+            text-decoration: none;
+
+            &:hover {
+              color: colors.$cor-detalhe-clara;
+            }
+          }
+        }
+      }
+
       .link-externo {
-        justify-content: center;
+        display: flex;
+        align-items: center;
+        gap: 0.5rem;
+        color: colors.$cor-branca;
+        margin-top: 0.5rem;
+        text-decoration: none;
+        &:hover {
+          color: colors.$cor-detalhe-clara;
+        }
+        .icone-contato {
+          display: flex;
+        }
+      }
+
+      .redes-sociais {
+        display: flex;
+        gap: 0.75rem;
+        margin-bottom: 0.75rem;
+
+        a {
+          width: 32px;
+          height: 32px;
+
+          .icone-redesocial {
+            width: 100%;
+            height: 100%;
+            border-radius: 6px;
+            svg {
+              width: 100%;
+              height: 100%;
+              color: colors.$cor-branca;
+            }
+          }
+        }
       }
       .contato-info {
-        justify-content: center;
+        display: flex;
+        gap: 0px;
+      }
+      .icone-contato {
+        width: 16px;
+        height: 16px;
+        // background-color: colors.$cor-branca; // Substituir por ícone específico
+        display: inline-block;
+        margin-right: 6px;
+        border-radius: 4px;
+        svg {
+          width: 100%;
+          height: 100%;
+        }
+      }
+
+      .texto-social {
+        font-size: 0.9rem;
+        color: colors.$cor-secundaria-clara;
+      }
+
+      .espaco-logo {
+        position: relative;
+        width: 80px;
+        height: 80px;
+        left: 0%;
+        transform: translateX(-0%);
+        background-color: colors.$cor-branca; // Espaço para o logotipo
+        border-radius: 6px;
+        margin-bottom: 1rem;
+        overflow: hidden;
+        img {
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+        }
+      }
+    }
+
+    .barra-inferior {
+      border-top: 1px solid rgba(255, 255, 255, 0.1);
+      padding-top: 20px;
+      text-align: center;
+
+      .texto-inferior {
+        font-size: 0.85rem;
+        color: colors.$cor-secundaria-clara;
+
+        a {
+          color: colors.$cor-detalhe-clara;
+          text-decoration: none;
+
+          &:hover {
+            text-decoration: underline;
+          }
+        }
+      }
+    }
+
+    @media (max-width: 768px) {
+      .conteudo-principal {
+        text-align: center;
+      }
+
+      .coluna {
+        .espaco-logo {
+          left: 50%;
+          transform: translateX(-50%);
+        }
+        .redes-sociais {
+          justify-content: center;
+        }
+        .link-externo {
+          justify-content: center;
+        }
+        .contato-info {
+          justify-content: center;
+        }
       }
     }
   }

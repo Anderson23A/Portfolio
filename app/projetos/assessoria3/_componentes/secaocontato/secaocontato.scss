@@ -1,0 +1,108 @@
+@use "../../colors.scss";
+
+.site-assessoria3 {
+  .secao-contato {
+    background-color: colors.$cor-fundo-claro;
+    padding: 4rem 0;
+
+    .conteudo {
+      display: flex;
+      gap: 2rem;
+    }
+
+    .coluna-informacoes {
+      .conteudo-coluna {
+        padding-left: 1rem;
+        padding-right: 1rem;
+        .titulo {
+          color: colors.$cor-principal;
+          font-size: 2rem;
+          font-weight: 700;
+          margin-bottom: 1rem;
+        }
+
+        .texto-explicativo {
+          color: colors.$cor-texto-principal;
+          margin-bottom: 2rem;
+        }
+
+        .linha-contato {
+          display: flex;
+          align-items: center;
+          margin-bottom: 1rem;
+
+          .icone-contato {
+            width: 24px;
+            height: 24px;
+            // background-color: colors.$cor-profunda; // Placeholder do ícone
+            border-radius: 4px;
+            margin-right: 0.75rem;
+            svg {
+              width: 100%;
+              height: 100%;
+              color: colors.$cor-profunda;
+              transition: color 0.3s ease;
+            }
+            &.icone-email:hover,
+            &.icone-telefone:hover {
+              svg {
+                color: colors.$cor-acao-positiva;
+              }
+            }
+          }
+
+          span {
+            color: colors.$cor-texto-principal;
+            font-size: 1rem;
+          }
+        }
+      }
+    }
+
+    .coluna-formulario {
+      background-color: colors.$cor-fundo-limpo;
+      padding: 2rem;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
+
+      label {
+        color: colors.$cor-texto-principal;
+        font-weight: 500;
+      }
+
+      .form-control {
+        margin-bottom: 1rem;
+      }
+
+      .botao-enviar {
+        background-color: colors.$cor-secundaria;
+        color: colors.$cor-fundo-limpo;
+        border: none;
+        padding: 0.5rem 1.5rem;
+        font-weight: 600;
+        transition: box-shadow 0.3s ease;
+
+        &:hover {
+          box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+        }
+      }
+    }
+
+    @media (max-width: 767px) {
+      .conteudo {
+        flex-direction: column;
+      }
+
+      .coluna-informacoes,
+      .coluna-formulario {
+        padding: 1rem 0;
+      }
+      .coluna-formulario {
+        form {
+          padding-left: 1rem;
+          padding-right: 1rem;
+        }
+      }
+    }
+  }
+}

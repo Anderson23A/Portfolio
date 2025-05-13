@@ -1,92 +1,99 @@
 @use "../colors.scss";
 
-.secao-portfolio {
-  background-color: colors.$cor-branca;
-  padding: 80px 0;
+.site-assessoria2 {
+  .secao-portfolio {
+    background-color: colors.$cor-branca;
+    padding: 80px 0;
 
-  .cabecalho-portfolio {
-    text-align: center;
-    margin-bottom: 3rem;
+    .cabecalho-portfolio {
+      text-align: center;
+      margin-bottom: 3rem;
 
-    .titulo-secao {
-      color: colors.$cor-primaria;
-      font-size: 2rem;
-      font-weight: bold;
-      margin-bottom: 0.5rem;
+      .titulo-secao {
+        color: colors.$cor-primaria;
+        font-size: 2rem;
+        font-weight: bold;
+        margin-bottom: 0.5rem;
+      }
+
+      .subtitulo-secao {
+        color: colors.$cor-texto-principal;
+        font-size: 1.2rem;
+      }
     }
 
-    .subtitulo-secao {
-      color: colors.$cor-texto-principal;
-      font-size: 1.2rem;
+    .coluna-projeto {
+      margin-bottom: 2rem;
     }
-  }
 
-  .coluna-projeto {
-    margin-bottom: 2rem;
-  }
+    .caixa-projeto {
+      position: relative;
+      overflow: hidden;
+      border-radius: 12px;
+      box-shadow: 0 4px 16px rgba(0, 0, 0, 0.06);
+      transition: transform 0.3s ease;
+      cursor: pointer;
 
-  .caixa-projeto {
-    position: relative;
-    overflow: hidden;
-    border-radius: 12px;
-    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.06);
-    transition: transform 0.3s ease;
-    cursor: pointer;
+      &:hover {
+        transform: scale(1.01);
 
-    &:hover {
-      transform: scale(1.01);
+        .informacoes-hover {
+          opacity: 1;
+        }
+      }
+
+      .imagem-projeto {
+        width: 100%;
+        height: 250px;
+        background-color: colors.$cor-secundaria-clara;
+        img {
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+        }
+      }
 
       .informacoes-hover {
-        opacity: 1;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        background-color: rgba(
+          30,
+          42,
+          56,
+          0.9
+        ); // Fundo escuro com transparência
+        color: colors.$cor-branca;
+        padding: 1rem;
+        opacity: 0;
+        transition: opacity 0.3s ease;
+
+        .titulo-projeto {
+          font-size: 1rem;
+          font-weight: 600;
+          margin-bottom: 0.25rem;
+        }
+
+        .descricao-projeto {
+          font-size: 0.9rem;
+          margin: 0;
+        }
       }
     }
 
-    .imagem-projeto {
-      width: 100%;
-      height: 250px;
-      background-color: colors.$cor-secundaria-clara;
-      img {
-        width: 100%;
-        height: 100%;
-        object-fit: cover;
+    @media (max-width: 768px) {
+      .caixa-projeto .imagem-projeto {
+        height: 200px;
       }
-    }
 
-    .informacoes-hover {
-      position: absolute;
-      bottom: 0;
-      left: 0;
-      right: 0;
-      background-color: rgba(30, 42, 56, 0.9); // Fundo escuro com transparência
-      color: colors.$cor-branca;
-      padding: 1rem;
-      opacity: 0;
-      transition: opacity 0.3s ease;
+      .cabecalho-portfolio .titulo-secao {
+        font-size: 1.5rem;
+      }
 
-      .titulo-projeto {
+      .cabecalho-portfolio .subtitulo-secao {
         font-size: 1rem;
-        font-weight: 600;
-        margin-bottom: 0.25rem;
       }
-
-      .descricao-projeto {
-        font-size: 0.9rem;
-        margin: 0;
-      }
-    }
-  }
-
-  @media (max-width: 768px) {
-    .caixa-projeto .imagem-projeto {
-      height: 200px;
-    }
-
-    .cabecalho-portfolio .titulo-secao {
-      font-size: 1.5rem;
-    }
-
-    .cabecalho-portfolio .subtitulo-secao {
-      font-size: 1rem;
     }
   }
 }
