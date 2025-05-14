@@ -20,7 +20,8 @@
     }
     h1 {
       .bold-texto {
-        color: colors.$cor-titulo-principal;
+        color: colors.$cor-bold-span;
+        font-weight: bold;
       }
     }
     p {

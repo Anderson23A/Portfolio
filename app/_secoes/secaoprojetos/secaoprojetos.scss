@@ -1,0 +1,35 @@
+@use "../../colors.scss";
+
+.secao-projetos {
+  position: relative;
+  width: 100%;
+  //   height: 400px;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  background-color: colors.$cor-fundo-principal;
+  .secao-titulo {
+    .secao-nome {
+      font-weight: bold;
+      color: colors.$cor-icone-principal;
+    }
+    h2 {
+      color: colors.$cor-texto-principal;
+    }
+  }
+  .servicos-lista {
+    padding-top: 1.5rem;
+    padding-bottom: 0.5rem;
+  }
+  .btn {
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: colors.$cor-botao-primario-fundo;
+    border-color: colors.$cor-botao-primario-fundo;
+    color: colors.$cor-texto-principal;
+    &:hover {
+      background-color: colors.$cor-botao-primario-hover;
+      border-color: colors.$cor-botao-primario-hover;
+    }
+  }
+}

@@ -1,0 +1,19 @@
+@use "../../colors.scss";
+
+.secao-quemsoueu {
+  position: relative;
+  width: 100%;
+  //   height: 400px;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  background-color: colors.$cor-fundo-principal;
+  .secao-titulo {
+    .secao-nome {
+      font-weight: bold;
+      color: colors.$cor-icone-principal;
+    }
+    h2 {
+      color: colors.$cor-texto-principal;
+    }
+  }
+}

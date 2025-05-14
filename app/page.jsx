@@ -10,11 +10,15 @@
 //   return <></>;
 // }
 import SecaoHero from "./_secoes/secaohero/secaohero";
+import SecaoProjetos from "./_secoes/secaoprojetos/secaoprojetos";
+import SecaoQuemSouEu from "./_secoes/secaoquemsoueu/secaoquemsoueu";
 
 export default function Home() {
   return (
     <>
       <SecaoHero />
+      <SecaoProjetos />
+      <SecaoQuemSouEu />
     </>
   );
 }
