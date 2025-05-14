@@ -1,17 +1,26 @@
+"use client";
+import Image from "next/image";
 import "./projeto.scss";
 
 export default function Projeto(props) {
   return (
-    <div className="projeto">
+    <div
+      className="projeto"
+      onClick={() => {
+        window.open(props.link, "_blank", "noopener,noreferrer");
+      }}
+    >
       <div className="imagem-container">
-        <div className="imagem-projeto"></div>
+        <Image
+          className="imagem-projeto"
+          src={props.img}
+          alt="projeto imagem"
+          width={100}
+          height={100}
+        />
       </div>
       <div className="descricao">
-        <p>
-          Texto Texto Texto TextoTexto Texto Texto TextoTexto Texto Texto Texto
-          Texto Texto Texto TextoTexto Texto Texto TextoTexto Texto Texto
-          TextoTexto Texto Texto Texto
-        </p>
+        <p>{props.descricao}</p>
       </div>
     </div>
   );

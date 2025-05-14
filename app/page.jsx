@@ -1,17 +1,7 @@
-// "use client";
-// import { useRouter } from "next/navigation";
-// import { useEffect } from "react";
-
-// export default function Home() {
-//   const router = useRouter();
-//   useEffect(() => {
-//     router.push("/projetos/assessoria1");
-//   }, [router]);
-//   return <></>;
-// }
 import SecaoHero from "./_secoes/secaohero/secaohero";
 import SecaoProjetos from "./_secoes/secaoprojetos/secaoprojetos";
 import SecaoQuemSouEu from "./_secoes/secaoquemsoueu/secaoquemsoueu";
+import SecaoContato from "./_secoes/secaocontato/secaocontato";
 
 export default function Home() {
   return (
@@ -19,6 +9,7 @@ export default function Home() {
       <SecaoHero />
       <SecaoProjetos />
       <SecaoQuemSouEu />
+      <SecaoContato />
     </>
   );
 }

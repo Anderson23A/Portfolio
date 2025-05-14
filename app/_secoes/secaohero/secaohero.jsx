@@ -1,6 +1,8 @@
 import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
+import HeroImage from "../../../public/imagens/home/hero.png";
+import Image from "next/image";
 import BotaoCTA from "./botaocta";
 import "./secaohero.scss";
 
@@ -15,12 +17,13 @@ export default function SecaoHero() {
           >
             <div className="conteudo-texto">
               <h1>
-                Texto texto texto Texto texto texto{" "}
-                <span className="bold-texto">Texto texto texto</span>
+                Olá, eu sou{" "}
+                <span className="bold-texto">Anderson, Desenvolvedor Web</span>{" "}
+                focado em soluções modernas e funcionais
               </h1>
               <p>
-                Texto texto texto Texto texto texto Texto texto texto Texto
-                texto texto Texto texto texto Texto texto texto
+                Criação de sites modernos, responsivos e otimizados para
+                oferecer a melhor experiência ao usuário.
               </p>
               <BotaoCTA />
             </div>
@@ -29,7 +32,14 @@ export default function SecaoHero() {
             md
             className="coluna-imagem d-flex justify-content-center align-items-center"
           >
-            <div className="imagem-placeholder"></div>
+            <div className="imagem-placeholder">
+              <Image
+                src={HeroImage}
+                alt="hero-imagem"
+                width={100}
+                height={100}
+              />
+            </div>
           </Col>
         </Row>
       </Container>

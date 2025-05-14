@@ -16,4 +16,58 @@
       color: colors.$cor-texto-principal;
     }
   }
+  .conteudo-quemsoueu {
+    padding-top: 1rem;
+    .tecnologias-container {
+      text-align: center;
+      .tecnologia-titulo {
+        font-weight: bold;
+        color: colors.$cor-texto-secundario;
+      }
+      .tecnologias {
+        position: relative;
+        display: flex;
+        // width: fit-content;
+        gap: 10px;
+        margin-top: 0.5rem;
+        margin-bottom: 1.5rem;
+        justify-content: center;
+        .imagem-tec {
+          width: 40px;
+          height: 40px;
+          border-radius: 50%;
+          overflow: hidden;
+          // background-color: colors.$cor-icone-principal;
+          svg {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            color: colors.$cor-icone-principal;
+          }
+        }
+      }
+    }
+    .texto {
+      position: relative;
+      color: colors.$cor-texto-principal;
+      width: fit-content;
+      height: fit-content;
+    }
+    .imagem-placeholder {
+      position: relative;
+      width: 100%;
+      max-width: 600px;
+      // height: 400px;
+      aspect-ratio: 16/9;
+      // background-color: colors.$cor-icone-principal;
+      flex-shrink: 0;
+      border-radius: 10px;
+      overflow: hidden;
+      img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+    }
+  }
 }

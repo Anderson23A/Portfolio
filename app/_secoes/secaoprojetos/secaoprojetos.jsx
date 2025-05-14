@@ -4,39 +4,30 @@ import Col from "react-bootstrap/Col";
 import Projeto from "./projeto";
 import "./secaoprojetos.scss";
 import BotaoClient from "./botaoclient/botaoclient";
+import itemsProjetos from "@/app/projetos/items";
 
 export default function SecaoProjetos() {
-  const projetos = [
-    {
-      imagem: "",
-      descricao: "",
-    },
-    {
-      imagem: "",
-      descricao: "",
-    },
-    {
-      imagem: "",
-      descricao: "",
-    },
-  ];
   return (
     <section className="secao-projetos">
       <Container>
         <div className="secao-titulo">
-          <span className="secao-nome">Projetos</span>
-          <h2>texto texto texto texto texto</h2>
+          <span className="secao-nome">Projetos recentes</span>
+          <h2>Projetos recentes que refletem minha experiência</h2>
         </div>
         <div className="servicos-lista">
           <Row>
-            {projetos.map((projeto, i) => (
+            {itemsProjetos.map((projeto, i) => (
               <Col
                 md={6}
                 lg={4}
                 className="d-flex justify-content-center mb-4"
                 key={i}
               >
-                <Projeto />
+                <Projeto
+                  img={projeto.imagem}
+                  descricao={projeto.descricao}
+                  link={projeto.link}
+                />
               </Col>
             ))}
           </Row>
