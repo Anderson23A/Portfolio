@@ -10,7 +10,7 @@ import "./secaoquemsoueu.scss";
 
 export default function SecaoQuemSouEu() {
   return (
-    <section className="secao-quemsoueu">
+    <section id="s-quemsoueu" className="secao-quemsoueu">
       <Container>
         <div className="secao-titulo">
           <span className="secao-nome">Quem sou eu</span>

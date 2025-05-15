@@ -4,7 +4,7 @@ import "./secaocontato.scss";
 
 export default function SecaoContato() {
   return (
-    <section className="secao-contato">
+    <section id="s-contato" className="secao-contato">
       <Container>
         <div className="secao-titulo">
           <span className="secao-nome">Contato</span>

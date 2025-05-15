@@ -2,6 +2,8 @@
 import Container from "react-bootstrap/Container";
 import Navbar from "react-bootstrap/Navbar";
 import Nav from "react-bootstrap/Nav";
+import logoIMG from "../../../public/imagens/logo.png";
+import Image from "next/image";
 import "./mainnavbar.scss";
 import items from "./items";
 
@@ -11,7 +13,9 @@ export default function MainNavbar() {
       <Navbar expand="lg">
         <Container>
           <Navbar.Brand href="/Portfolio">
-            <div className="logo-placeholder"></div>
+            <div className="logo-placeholder">
+              <Image src={logoIMG} alt="logo" width={100} height={100} />
+            </div>
           </Navbar.Brand>
           <Navbar.Toggle aria-controls="basic-navbar-nav">
             <span className="icon-menu">

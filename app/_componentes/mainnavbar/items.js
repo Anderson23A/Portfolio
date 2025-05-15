@@ -5,15 +5,15 @@ const items = [
   },
   {
     nome: "Projetos",
-    link: "#",
+    link: "#s-projetos",
   },
   {
-    nome: "Sobre mim",
-    link: "#",
+    nome: "Quem sou eu",
+    link: "#s-quemsoueu",
   },
   {
     nome: "Contato",
-    link: "#",
+    link: "#s-contato",
   },
 ];
 

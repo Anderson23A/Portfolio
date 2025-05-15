@@ -8,7 +8,7 @@ import "./secaohero.scss";
 
 export default function SecaoHero() {
   return (
-    <section className="secao-hero">
+    <section id="s-hero" className="secao-hero">
       <Container className="h-100">
         <Row className="h-100">
           <Col

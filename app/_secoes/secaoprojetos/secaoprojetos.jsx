@@ -8,7 +8,7 @@ import itemsProjetos from "@/app/projetos/items";
 
 export default function SecaoProjetos() {
   return (
-    <section className="secao-projetos">
+    <section id="s-projetos" className="secao-projetos">
       <Container>
         <div className="secao-titulo">
           <span className="secao-nome">Projetos recentes</span>
@@ -32,7 +32,7 @@ export default function SecaoProjetos() {
             ))}
           </Row>
         </div>
-        <BotaoClient />
+        {/* <BotaoClient /> */}
       </Container>
     </section>
   );
