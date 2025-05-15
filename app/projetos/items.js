@@ -6,7 +6,7 @@ const itemsProjetos = [
   {
     imagem: assessoria1IMG,
     descricao:
-      "Projeto pessoal desenvolvido com o objetivo de praticar a construção de uma landing page institucional completa. A ConsulPlan é uma consultoria fictícia voltada à transformação de empresas por meio de estratégias nas áreas de gestão, finanças, processos e tecnologia. ",
+      "Projeto pessoal desenvolvido com o objetivo de praticar a criação de uma landing page institucional completa. A Excellence Assessoria é uma empresa fictícia dedicada a apoiar a transformação de negócios por meio de soluções estratégicas nas áreas de gestão, finanças, processos e tecnologia.",
     link: "https://andersondevprojetos.vercel.app/projetos/assessoria1",
   },
   {
